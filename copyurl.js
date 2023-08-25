@@ -7,7 +7,6 @@ button.id = "floatingButton"; // Assign an ID for styling
 button.addEventListener("click", function() {
     var url = window.location.href; // Get the current URL
     copyToClipboard(url); // Call the function to copy to clipboard
-    sleep(500).then(msg => console.log(msg));
     button.textContent = "URL";
 });
 

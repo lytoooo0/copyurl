@@ -1,13 +1,13 @@
 {
   "manifest_version": 2,
   "name": "CopyURL",
-  "version": "1.0",
+  "version": "1.0.1",
 
   "description": "Generate a floating button write the current URL to clipboard once clicked.",
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
+      "matches": ["<all_urls>"],
       "js": ["copyurl.js"],
       "css": ["css/styles.css"]
     }
